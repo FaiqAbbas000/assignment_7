@@ -1,0 +1,36 @@
+body{
+    background-image: url(backgroung.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#signupDiv{
+    background-color: white;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#loginAccount{
+    margin-top: 20px;
+}
+
+.formatting{
+    width:100%;
+    height:30px;
+}
+
+#nameError , #userNameError , #passwordError , #confirmPasswordError{
+    color: red;
+    font-size: 12px;
+}

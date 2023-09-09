@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link  type="text/css" rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="loginDiv">
+        <div id="title">
+            <h1>Log In</h1>
+        </div>
+        <div>
+            <form  id="loginForm">
+                <label class="formatting">User Name:</label><br>
+                <input type="text" name="username" id="username"class="formatting" placeholder="abc@gmail.com"><br>
+                <span id="userNameError"class="formatting"></span><br>
+                <label class="formatting">Password:</label><br>
+                <input type="password" name="password" id="password" class="formatting" placeholder="abc@123"><br>
+                <span id="passwordError" class="formatting"></span><br>
+                <input type="submit" value="Log In" id="loginButton" class="formatting"><br>
+            </form>
+            <div id="creatAccount">
+                <span class="formatting">Don't have an account?<a href="signup.html" >signup</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

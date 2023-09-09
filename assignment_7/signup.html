@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link  type="text/css" rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="signupDiv">
+        <div id="title">
+            <h1>Sign Up</h1>
+        </div>
+        <div>
+            <form id="signupForm">
+                <lable class="formatting">Name</lable><br>
+                <input type="text" name="name" id="name" class="formatting" placeholder="Enter your name"><br>
+                <span id="nameError" class="formatting"></span><br>
+                <label class="formatting">User Name</label><br>
+                <input type="text" name="username" id="username" class="formatting" placeholder="abc@gmail.com"><br>
+                <span id="userNameError" class="formatting"></span><br>
+                <label class="formatting">Password</label><br>
+                <input type="password" name="password" id="password" class="formatting" placeholder="abc@123"><br>
+                <span id="passwordError" class="formatting"></span><br>
+                <label class="formatting">Confirm Password</label><br>
+                <input type="password" name="confirmPassword" id="confirmPassword" class="formatting" placeholder="abc@123"><br>
+                <span id="confirmPasswordError" class="formatting"></span><br>
+                <input type="submit" value="Sign Up" id="signupButton" class="formatting" onclick="return signupValidation()"><br>
+            </form>
+            <div id="loginAccount" class="formatting" >
+                <span>Already have an account?<a href="login.html">login</a></span>
+            </div>
+            <div id="error-message" class="error-message">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>
