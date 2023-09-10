@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var user = database.find(function (user) {
             return user.User_Name === usernameinput;
         });
+        localStorage.setItem("currentUser", JSON.stringify(user));
         if (usernameinput === "") {
             userNameError.innerHTML = "Please enter your username";
             return false;
@@ -138,7 +139,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 icon: 'success',
                 title: 'Success',
                 text: 'Login successfully',
+                
             });
+            location.replace("dashboard.html");
             usernameInput.value = "";
             passwordInput.value = "";
             return true;
@@ -147,6 +150,12 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.getElementById("header").value;
+    result =  JSON.parse(localStorage.getItem("currentUser"));
+    header.innerHTML = "Welcome " + result.Name;
+    console.log(result.Name);
+});
 
 
 
